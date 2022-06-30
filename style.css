@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans&family=Oswald:wght@500&display=swap");
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+main {
+    background-color:#0f252c;
+  border-radius: 10px;
+  max-width: 60%;
+  width: 550px;
+  margin: auto;
+  display: grid;
+  grid-template-areas:
+    "score score score"
+    "rock paper scissors"
+    "rock-title paper-title scissors-title";
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 50px;
+  grid-row-gap: 1rem;
+  /* border: 1px solid black; */
+  overflow: hidden;
+  margin-top: 100px;
+  color: #a5865a;
+ 
+
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;}
+
+.score {
+  grid-area: score;
+  display: flex;
+  padding: 1em;
+  align-items: center;
+  justify-content: center;
+  font-family: "Oswald", sans-serif;
+  font-size: 1.5em;
+}
+
+.rock {
+  grid-area: rock;
+  display: flex;
+  align-items: center;
+}
+
+.paper {
+  grid-area: paper;
+  display: flex;
+  align-items: center;
+}
+
+.scissors {
+  grid-area: scissors;
+  display: flex;
+  align-items: center;
+}
+
+.rock-title {
+  grid-area: rock-title;
+  text-align: center;
+  font-family: "Noto Sans", sans-serif;
+  font-size: 0.9em;
+}
+
+.paper-title {
+  grid-area: paper-title;
+  text-align: center;
+  font-family: "Noto Sans", sans-serif;
+  font-size: 0.9em;
+}
+
+.scissors-title {
+  grid-area: scissors-title;
+  text-align: center;
+  font-family: "Noto Sans", sans-serif;
+  font-size: 0.9em;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+  background-color: #0f252c;
+  font-size: 3rem;
+  color: #a5865a;
+  text-align: center;
+  margin: auto;
+  border-radius: 50%;
+  margin-top: 25px;
+}
+
+button:hover {
+    opacity: 0.8;
+  transition: 1s;
+  transform: rotate(calc(360deg));
+}
