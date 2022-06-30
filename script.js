@@ -16,9 +16,6 @@ function reset() {
 round = 0;
 function checkWinner() {
     round++;
-    console.log(round + " rounds");
-    console.log(player_score.innerHTML);
-    console.log(computer_score.innerHTML);
     if (round === 5) {
         if (parseInt(player_score.innerHTML) > parseInt(computer_score.innerHTML)) {
             alert("You win!");
