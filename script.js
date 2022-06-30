@@ -62,17 +62,10 @@ paperButton = document.getElementsByClassName("paper")[0];
 scissorsButton = document.getElementsByClassName("scissors")[0];
 
 function computerPlay() {
-    let random = Math.floor(Math.random() * 3);
-    let choice = "";
-    if (random == 0) {
-        choice = "ROCK";
-    } else if (random == 1) {
-        choice = "PAPER";
-    } else {
-        choice = "SCISSORS";
-    }
-    computer.innerHTML = choice;
-    return choice;
+    const game_choice = ["ROCK", "PAPER", "SCISSORS"];
+    const random = Math.floor(Math.random() * game_choice.length);
+    computer.innerHTML = game_choice[random];
+    return game_choice[random];
 }
 
 function playRock() {
